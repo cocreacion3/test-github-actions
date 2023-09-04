@@ -20,4 +20,4 @@ jobs:
       - name: Display Python version
         run: python -c "import sys; print(sys.version)"
       - name: Hello World
-        run: python print('Hello worldcito')
+        run: python -c "print('Hello worldcito')"
