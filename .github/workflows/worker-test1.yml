@@ -11,6 +11,7 @@ jobs:
       - uses: actions/checkout@v3
       # You can test your matrix by printing the current Python version
       - name: Display Python version
-        run: python -c "import sys; print(sys.version)"
-      # - name: Hello World
-      #   run: python -c "print('Hello worldcito')"
+        run: python3 -c "import sys; print(sys.version)"
+      
+      -name: run worker
+        run: python3 worker.py
