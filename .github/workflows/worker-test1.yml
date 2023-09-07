@@ -12,6 +12,5 @@ jobs:
       # You can test your matrix by printing the current Python version
       - name: Display Python version
         run: python3 -c "import sys; print(sys.version)"
-      
-      -name: run worker
+      - name: run worker
         run: python3 worker.py
