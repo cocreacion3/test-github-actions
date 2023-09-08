@@ -12,9 +12,9 @@ jobs:
       - name: Display Python version
         run: python3 -c "import sys; print(sys.version)"
       
-      # - name: Build docker images
-      #   run: |
-      #     docker compose \
-      #       -f docker-compose.yml \
-      #       build
+      - name: Build docker images
+        run: |
+          docker compose \
+            -f docker-compose.yml \
+            build
             
