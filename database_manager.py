@@ -1962,7 +1962,8 @@ year = 2023
 # #UPDATE DEVICES
 # get_consolidated(periodicity, day, weekday, week, month, year)
 
-# add_device(id, service, 'test-area99', 'cubicle-99', 'None', False )
+add_device('maga-003', service, 'test-area99', 'cubicle-99', 'None', False )
+add_device('maga-006', service, 'test-area99', 'cubicle-99', 'None', False )
 
 # get_consolidated('daily', day, weekday, week, month, year)
 # get_consolidated('weekly', day, weekday, week, month, year)
