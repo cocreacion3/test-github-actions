@@ -2,3 +2,9 @@
 2023-09-08 16:12:51,529 [INFO] hi from worker3
 2023-09-08 16:12:56,531 [INFO] hi from worker3
 2023-09-08 16:13:01,537 [INFO] hi from worker3
+2023-09-08 19:35:01,047 [INFO] sysid= 1 id= maga-003 app= Maga h: 19 d: 8 wd: 4 w: 36 m: 9 y: 2023
+2023-09-08 19:35:01,047 [INFO] [{'name': 'Manos limpias', 'prop': 'clean_hands', 'value': 0}, {'name': 'manos sucias', 'prop': 'dirty_hands', 'value': 0}, {'name': 'Consumo de guantes', 'prop': 'box_chanes', 'value': 0}]
+2023-09-08 19:35:50,406 [INFO] sysid= 1 id= maga-006 app= Maga h: 19 d: 8 wd: 4 w: 36 m: 9 y: 2023
+2023-09-08 19:35:50,407 [INFO] [{'name': 'Manos limpias', 'prop': 'clean_hands', 'value': 0}, {'name': 'manos sucias', 'prop': 'dirty_hands', 'value': 1}, {'name': 'Consumo de guantes', 'prop': 'box_chanes', 'value': 0}]
+2023-09-08 19:36:08,309 [INFO] sysid= 1 id= maga-003 app= Maga h: 19 d: 8 wd: 4 w: 36 m: 9 y: 2023
+2023-09-08 19:36:08,309 [INFO] [{'name': 'Manos limpias', 'prop': 'clean_hands', 'value': 0}, {'name': 'manos sucias', 'prop': 'dirty_hands', 'value': 0}, {'name': 'Consumo de guantes', 'prop': 'box_chanes', 'value': 0}]

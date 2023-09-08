@@ -9,7 +9,7 @@ import sys
 import logging
 
 
-MONGO_URI = "mongodb://0.0.0.0:27017"
+MONGO_URI = "mongodb://mongodb:27017/"
 MONGO_TIME_OUT = 2000
 
 iot_db = 'maga'
@@ -1972,7 +1972,7 @@ add_device('maga-006', service, 'test-area99', 'cubicle-99', 'None', False )
 # #GET QUERY DEVICES
 
 
-# print_device(id)
+print_device(id)
 # print('////////////////////////////////////////**//////////////////////////////')
 # print(get_query_data(id, periodicity, 'day', day, week, month, year))
 
