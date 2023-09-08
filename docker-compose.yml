@@ -4,6 +4,8 @@ services:
     container_name: pythonservice2
     # restart: always
     build: ./
+    volumes:
+      - ./logs:/app/logs
     command: python3 ./hi.py
     ports:
       - "5000:3000"
