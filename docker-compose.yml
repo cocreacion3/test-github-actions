@@ -6,7 +6,7 @@ services:
     build: ./
     volumes:
       - ./logs:/app/logs
-    command: python3 ./worker.py
+    command: python3 ./worker-mqtt.py
     ports:
       - "5000:3000"
     links:
