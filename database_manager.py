@@ -210,7 +210,7 @@ def update_daily(sysId, id, aplication, hour, day, weekday, week, month, year, p
     print(sysId, id, aplication, hour, day, weekday, week, month, year)
     print(props)
     print(location)
-    logging.info('sysid= ',sysId,' id= ', id,' app= ', aplication,' h: ', hour,' d: ', day, ' wd: ', weekday, ' w: ', week, ' m: ', month,' y: ', year)
+    logging.info('sysid= %s id= %s app= %s h: %s d: %s wd: %s w: %s m: %s y: %s', sysId, id, aplication, hour, day, weekday, week, month, year)
     logging.info(props)
 
     if location is None:
