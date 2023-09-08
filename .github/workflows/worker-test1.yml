@@ -8,9 +8,14 @@ jobs:
     runs-on: self-hosted
 
     steps:
+      - name: Check out repository code
       - uses: actions/checkout@v3
-      # You can test your matrix by printing the current Python version
+
       - name: Display Python version
         run: python3 -c "import sys; print(sys.version)"
-      - name: run worker
-        run: python3 worker.py
+      
+      - name: Build docker images
+        run: |
+          docker compose \
+            -f docker-compose.yml \
+            build
