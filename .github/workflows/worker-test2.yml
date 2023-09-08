@@ -13,7 +13,7 @@ jobs:
         run: python3 -c "import sys; print(sys.version)"
       
       - name: Build docker images
-        run: docker-compose -f docker-compose.yml up
+        run: docker-compose -f docker-compose.yml up --build -d
         
         # |
         #   docker compose \
