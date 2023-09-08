@@ -5,6 +5,8 @@ from bson import ObjectId
 import copy
 import time
 import random
+import sys
+import logging
 
 
 MONGO_URI = "mongodb://0.0.0.0:27017"
@@ -17,6 +19,14 @@ devices_collection = 'devices'
 
 
 
+logging.basicConfig(
+    level=logging.INFO,
+    format='%(asctime)s [%(levelname)s] %(message)s',
+    handlers=[
+        logging.StreamHandler(),  # Log to console
+        logging.FileHandler('/app/logs/app.log')  # Log to file within the container
+    ]
+)
 
 
 
@@ -200,6 +210,8 @@ def update_daily(sysId, id, aplication, hour, day, weekday, week, month, year, p
     print(sysId, id, aplication, hour, day, weekday, week, month, year)
     print(props)
     print(location)
+    logging.info('sysid= ',sysId,' id= ', id,' app= ', aplication,' h: ', hour,' d: ', day, ' wd: ', weekday, ' w: ', week, ' m: ', month,' y: ', year)
+    logging.info(props)
 
     if location is None:
         return
