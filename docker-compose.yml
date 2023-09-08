@@ -6,18 +6,18 @@ services:
     build: ./
     volumes:
       - ./logs:/app/logs
-    command: python3 ./hi.py
+    command: python3 ./worker.py
     ports:
       - "5000:3000"
-    # links:
-    #   - mongodb
+    links:
+      - mongodb
 
-  # mongodb:
-  #   container_name: dashboardDataBase
-  #   image:  mongo
-  #   command: mongod --port 27017
-  #   ports:
-  #     - '27017:27017'
+  mongodb:
+    container_name: dashboardDataBase
+    image:  mongo
+    command: mongod --port 27017
+    ports:
+      - '27017:27017'
 
 
 #  docker-compose build   image creation with compose
