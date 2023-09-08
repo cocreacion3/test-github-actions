@@ -6,7 +6,7 @@ from dateutil.parser import isoparse
 from database_manager import *
 import datetime
 
-
+sys.stderr.write("hi from worker!\n")
 
 username = "hgm-maga@ttn"
 password = "NNSXS.BUQAAO3FG77GWDTX6DHADX5FM6WNHMDRRSUIWIY.JH25PY3RE6FDWC4WMXOA5RC5YBK2RYQFBW5E52TZYSDHXI32LR7A"
@@ -61,7 +61,6 @@ vumeter_key = {
 keys['maga_key'] = maga_key
 keys['vumeter_key'] = vumeter_key
 
-print('holiwis')
 
 client = mqtt.Client()
 
@@ -72,6 +71,8 @@ class TtnClient:
   
     def on_connect(self, client, userdata, flags, rc):
         print("Connected with result code "+ str(rc))
+        sys.stderr.write("Connected with result code " + str(rc) +  "\n")
+        
 
     def on_message(self, client, userdata, message):
         mqtt_message = message # Store the received MQTT message

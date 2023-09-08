@@ -1,21 +1,21 @@
 
 services:
   pythonapp:
-    container_name: pythonservice
+    container_name: pythonservice2
     # restart: always
     build: ./
-    command: python3 ./worker-mqtt.py
+    command: python3 ./hi.py
     ports:
       - "5000:3000"
-    links:
-      - mongodb
+    # links:
+    #   - mongodb
 
-  mongodb:
-    container_name: dashboardDataBase
-    image:  mongo
-    command: mongod --port 27017
-    ports:
-      - '27017:27017'
+  # mongodb:
+  #   container_name: dashboardDataBase
+  #   image:  mongo
+  #   command: mongod --port 27017
+  #   ports:
+  #     - '27017:27017'
 
 
 #  docker-compose build   image creation with compose

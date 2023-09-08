@@ -28,6 +28,7 @@ COPY  ./requirements.txt /requirements.txt
 RUN pip install -r requirements.txt
 
 WORKDIR /usr/app/src/
-COPY worker-mqtt.py router.py database_manager.py ./
+COPY worker-mqtt.py router.py database_manager.py hi.py ./
+# CMD ["python3", "worker-mqtt.py"]
 
 EXPOSE 3000
