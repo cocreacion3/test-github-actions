@@ -5,10 +5,10 @@ from flask_cors import CORS
 import datetime
 
 app = Flask(__name__)
-CORS(app, resources={r"/data_devices": {"origins": "http://localhost:3000"},
-                     r"/data_services": {"origins": "http://localhost:3000"},
-                     r"/query_devices": {"origins": "http://localhost:3000"},
-                     r"/query_services": {"origins": "http://localhost:3000"}})
+CORS(app, resources={r"/data_devices": {"origins": "http://localhost:3300"},
+                     r"/data_services": {"origins": "http://localhost:3300"},
+                     r"/query_devices": {"origins": "http://localhost:3300"},
+                     r"/query_services": {"origins": "http://localhost:3300"}})
 
 @app.route('/data_devices')
 def data_devices():
@@ -91,4 +91,4 @@ def query_services():
 
 
 if __name__ == '__main__':
-    app.run(debug=True, port=5000)
+    app.run(debug=True, port=5500)
