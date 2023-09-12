@@ -17,7 +17,7 @@ services:
     build: ./
     command: python3 ./router.py
     ports:
-      - "5500:3300"
+      - "5500:5500"
 
   mongodb:
     container_name: dashboardDataBase
