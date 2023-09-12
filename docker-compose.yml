@@ -12,6 +12,13 @@ services:
     links:
       - mongodb
 
+  flaskServer:
+    container_name: flask-server
+    build: ./
+    command: python3 ./router.py
+    ports:
+      - "5000:3000"
+
   mongodb:
     container_name: dashboardDataBase
     image:  mongo
