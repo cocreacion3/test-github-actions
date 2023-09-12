@@ -10,15 +10,19 @@ services:
     ports:
       - "5000:3000"
     links:
-      - mongodb
+      # - mongodb
       - flaskserver
 
   flaskserver:
     container_name: flask-server
     build: ./
+    volumes:
+      - ./logs:/app/logs
     command: python3 ./router.py
     ports:
       - "5500:5500"
+    restart: always
+  
 
   mongodb:
     container_name: dashboardDataBase
