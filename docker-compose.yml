@@ -12,7 +12,7 @@ services:
     links:
       - mongodb
 
-  flaskServer:
+  flaskserver:
     container_name: flask-server
     build: ./
     command: python3 ./router.py
